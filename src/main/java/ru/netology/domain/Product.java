@@ -66,4 +66,8 @@ public class Product {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    public boolean matches(String text) {
+    return name.contains(text);
+    }
 }
