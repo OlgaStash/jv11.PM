@@ -45,6 +45,9 @@ public class Product {
 
         this.price = price;
     }
+    public boolean matches(String search) {
+        return name.contains(search);
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -66,4 +69,6 @@ public class Product {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+
 }
