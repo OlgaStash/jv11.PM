@@ -52,9 +52,8 @@ public class Book extends Product {
         return "Book{}";
     }
 
-    @Override
-    public boolean matches(String text) {
-        return super.matches(text) || author.matches(text);
+    public boolean matches(String search) {
+        return super.matches(search) || author.matches(search);
     }
 
 }

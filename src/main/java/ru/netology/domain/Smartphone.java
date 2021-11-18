@@ -48,9 +48,12 @@ public class Smartphone extends Product {
         return Objects.hash(super.hashCode(), producer);
     }
 
-    @Override
-    public boolean matches(String text) {
-        return super.matches(text) || producer.matches(text);
+
+    public boolean matches(String search) {
+        if (super.matches(search)) {
+            return true;
+        }
+        return producer.contains(search);
     }
 }
 
