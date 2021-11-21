@@ -45,10 +45,11 @@ public class Smartphone extends Product {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(super.hashCode(), producer);
     }
 
-
+    @Override
     public boolean matches(String search) {
         if (super.matches(search)) {
             return true;

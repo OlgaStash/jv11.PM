@@ -32,11 +32,7 @@ public class ProductManager {
 
             }
         }
-            return result;
-        }
-
-
-
-
+        return result;
+    }
 }
 
