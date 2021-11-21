@@ -23,7 +23,7 @@ public class ProductManager {
         Product[] result = new Product[0];
 
         for (Product product : repository.findAll()) {
-            if (matches(product, text)) {
+            if (product.matches(text)) {
                 int lenght = result.length + 1;
                 Product[] tmp = new Product[lenght];
                 System.arraycopy(result, 0, tmp, 0, result.length);
@@ -33,6 +33,7 @@ public class ProductManager {
         }
         return result;
     }
+
 
 
     public boolean matches(Product product, String search) {
@@ -53,5 +54,6 @@ public class ProductManager {
         }
         return false;
     }
+
 }
 

@@ -42,11 +42,18 @@ public class Book extends Product {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(super.hashCode(), author);
     }
 
     @Override
     public String toString() {
+
         return "Book{}";
     }
+
+    public boolean matches(String search) {
+        return super.matches(search) || author.matches(search);
+    }
+
 }
