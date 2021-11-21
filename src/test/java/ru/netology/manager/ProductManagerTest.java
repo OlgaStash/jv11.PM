@@ -33,7 +33,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByNameOne(){
+    public void shouldSearchByNameOne() {
         Product[] expected = {book3};
         Product[] actual = manager.searchBy("Алхимик");
 
@@ -41,7 +41,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByNameSome(){
+    public void shouldSearchByNameSome() {
         Product[] expected = {smartphone3, smartphone2, smartphone4};
         Product[] actual = manager.searchBy("LG");
 
@@ -49,7 +49,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByAuthorOne(){
+    public void shouldSearchByAuthorOne() {
         Product[] expected = {book2};
         Product[] actual = manager.searchBy("Сергей Лукьяненко");
 
@@ -57,7 +57,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByAuthorSome(){
+    public void shouldSearchByAuthorSome() {
         Product[] expected = {book1, book4};
         Product[] actual = manager.searchBy("Стивен Кинг");
 
@@ -65,7 +65,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByProducerOne(){
+    public void shouldSearchByProducerOne() {
         Product[] expected = {smartphone1};
         Product[] actual = manager.searchBy("Samsung");
 
@@ -73,7 +73,7 @@ class ProductManagerTest {
     }
 
     @Test
-    public void shouldSearchByProducerSome(){
+    public void shouldSearchByProducerSome() {
         Product[] expected = {smartphone3, smartphone2, smartphone4};
         Product[] actual = manager.searchBy("LG");
 
